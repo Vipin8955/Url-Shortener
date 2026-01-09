@@ -10,6 +10,11 @@ app.set("views", path.join(__dirname, "views"));
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+
+app.get("/", (req, res) => {
+  res.redirect("/login");
+});
+
 const staticRouter=require('./routes/staticRoute');
 const urlRouter=require('./routes/urlRoute');
 app.use('/',staticRouter);
