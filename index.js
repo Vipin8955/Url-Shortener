@@ -14,12 +14,13 @@ const staticRouter=require('./routes/staticRoute');
 const urlRouter=require('./routes/urlRoute');
 app.use('/',staticRouter);
 app.use('/url',urlRouter);
-const PORT = 8000;
 
 (async () => {
     await connectMongo(process.env.MONGO_URI);
 
+    const PORT = process.env.PORT || 8000;
+
     app.listen(PORT, () => {
-        console.log(`Listening on PORT:${PORT}`);
+        console.log(`Listening on PORT: ${PORT}`);
     });
 })();
