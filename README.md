@@ -75,6 +75,7 @@ CSS (Glassmorphism UI for auth pages)
 
 Vanilla JavaScript (Fetch API)
 
+```text
 📁 Project Structure
 urlexp/
 ├── controllers/
