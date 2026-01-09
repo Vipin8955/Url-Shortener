@@ -113,8 +113,8 @@ SECRET=your_jwt_secret
 
 Clone the repository
 
-git clone https://github.com/your-username/url-shortener.git
-cd url-shortener
+git clone https://github.com/Vipin8955/Url-Shortener.git
+cd Url-Shortener
 
 
 Install dependencies
