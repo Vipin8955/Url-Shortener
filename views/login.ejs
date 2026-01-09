@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/loginStyle.css">
+</head>
+<body>
+    <div class="auth-container">
+  <h2>Login</h2>
+
+  <form method="post" action="/login">
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Password</label>
+    <input type="password" name="password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <% if (error) { %>
+    <div class="error"><%= error %></div>
+  <% } %>
+
+  <div class="link">
+    Don’t have an account? <a href="/signup">Sign up</a>
+  </div>
+</div>
+
+</body>
+</html>
