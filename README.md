@@ -3,6 +3,8 @@
 A full-stack URL Shortener application built using Node.js, Express, MongoDB, and EJS, featuring user authentication, secure password handling, click analytics, and a clean dashboard UI.
 
 This project follows proper backend architecture patterns and is suitable for learning, portfolio, and interview discussions.
+## 🌐 Live Demo
+https://url-shortener-zkx5.onrender.com
 
 🚀 Features
 🔐 Authentication & Security
